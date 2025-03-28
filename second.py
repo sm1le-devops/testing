@@ -1,9 +1,13 @@
 def func(a):
-    print(a+2)
+    return a+23
 
-func(33)
+
 
 def second_func(*args):
     a = list(map(str,args))
-    print(a)
-second_func(2,3,6,8)
+    return a
+
+
+a = second_func(2,3,6,8)
+a.append(func(33))
+print(a)
